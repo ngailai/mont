@@ -1,5 +1,5 @@
 import Buea from '../../public/assets/Buea.jpg';
-import Limbe from '../../public/assets/Limbe.jpg';
+import Limbe from '../../public/assets/limbe.jpg';
 import Berlin from '../../public/assets/berlin.jpg';
 import Paris from '../../public/assets/paris.jpg';
 import Bimbia from '../../public/assets/bimbia (4).jpg';

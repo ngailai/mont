@@ -1,6 +1,6 @@
 'use client';
 import React, {useState} from 'react';
-import Limbe from '../../../../public/assets/Limbe.jpg';
+import Limbe from '../../../../public/assets/limbe.jpg';
 import {zodResolver} from '@hookform/resolvers/zod';
 import Image from 'next/image';
 import {useRouter} from 'next/navigation';

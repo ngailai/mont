@@ -1,5 +1,5 @@
 import Bimbia from '../../../../../public/assets/bimbia (3).jpg';
-import Limbe from '../../../../../public/assets/Limbe.jpg';
+import Limbe from '../../../../../public/assets/limbe.jpg';
 import Berlin from '../../../../../public/assets/berlin.jpg';
 import Hamburg from '../../../../../public/assets/Hamburg.jpg';
 import Paris from '../../../../../public/assets/paris.jpg';

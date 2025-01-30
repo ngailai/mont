@@ -34,8 +34,8 @@ export async function POST(req) {
             payment_method_types: ['card'],
             line_items: stripe_obj,
             mode: 'payment',
-            success_url: 'http://localhost:3000/success-page',
-            cancel_url: 'http://localhost:3000',
+            success_url: 'http://localhost:3004/success-page',
+            cancel_url: 'http://localhost:3004',
             metadata: {
                 startDate,
                 endDate,
