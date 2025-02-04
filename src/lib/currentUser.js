@@ -1,6 +1,6 @@
 import db from './db';
 import {getServerSession} from 'next-auth';
-import {authOptions} from '@/app/api/auth/[...nextauth]/route';
+import {authOptions} from '@/utils/authOptions';
 import {NextResponse} from 'next/server';
 
 async function getSession() {

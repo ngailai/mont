@@ -1,13 +1,23 @@
 'use client';
 
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import {ChevronLeft, ChevronRight} from 'lucide-react';
 import * as React from 'react';
-import { DayPicker } from 'react-day-picker';
+import {DayPicker} from 'react-day-picker';
 
-import { cn } from '@/lib2/utils';
-import { buttonVariants } from '@/ui2/button';
+import {cn} from '@/lib2/utils';
+import {buttonVariants} from '@/ui2/button';
 
 export type CalendarProps = React.ComponentProps<typeof DayPicker>;
+interface CustomComponents {
+    IconLeft?: React.ComponentType;
+    IconRight?: React.ComponentType;
+}
+
+// Example usage
+const customComponents: CustomComponents = {
+    IconLeft: (props) => <ChevronLeft className='h-4 w-4' {...props} />,
+    IconRight: (props) => <ChevronRight className='h-4 w-4' {...props} />,
+};
 
 function Calendar({
     className,
@@ -59,10 +69,12 @@ function Calendar({
                 day_hidden: 'invisible',
                 ...classNames,
             }}
-            components={{
-                IconLeft: ({...props}) => <ChevronLeft className='h-4 w-4' />,
-                IconRight: ({...props}) => <ChevronRight className='h-4 w-4' />,
-            }}
+            components={
+                {
+                    // IconLeft: ({...props}) => <ChevronLeft className='h-4 w-4' />,
+                    // IconRight: ({...props}) => <ChevronRight className='h-4 w-4' />,
+                }
+            }
             {...props}
         />
     );

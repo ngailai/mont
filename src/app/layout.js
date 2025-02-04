@@ -4,6 +4,7 @@ import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
 import './globals.css';
 import Toast from '@/utils/toast';
 import Provider from '@/utils/sessionProvider';
+import {Suspense} from 'react';
 
 const inter = Inter({subsets: ['latin']});
 
@@ -18,7 +19,9 @@ export default function RootLayout({children}) {
             <body className={inter.className}>
                 <Provider>
                     <Toast />
-                    <LayoutProvider>{children}</LayoutProvider>
+                    <Suspense>
+                        <LayoutProvider>{children}</LayoutProvider>
+                    </Suspense>
                 </Provider>
             </body>
         </html>
