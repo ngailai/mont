@@ -169,7 +169,7 @@ const Navbar = () => {
                                 HOME
                             </li>
                         </Link>
-                        <Link href='/aboutus'>
+                        <Link href='/about'>
                             <li
                                 onClick={() => setMenuOpen(false)}
                                 className='py-4 text-sm'
@@ -177,12 +177,12 @@ const Navbar = () => {
                                 About US
                             </li>
                         </Link>
-                        <Link href='/catalog'>
+                        <Link href='/contact'>
                             <li
                                 onClick={() => setMenuOpen(false)}
                                 className='py-4 text-sm'
                             >
-                                Services
+                                Contact Us
                             </li>
                         </Link>
                         <Link href='/acordion'>
