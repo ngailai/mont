@@ -30,6 +30,7 @@ import {useChat} from '@ai-sdk/react';
 import {use, useRef, useState} from 'react';
 import {React} from 'react';
 import {useEffect} from 'react';
+import MainGallery from '@/components/gallery/MainGallery';
 
 export default function Home() {
     const [isChatOpen, setIsChatOpen] = useState(false);
@@ -92,6 +93,7 @@ export default function Home() {
                 mainHeader='Get the best offer for your trip'
                 secondaryHeader='Choose your desired hotel'
             /> */}
+            <MainGallery />
             <Aboutus />
             <Acordion />
             <BestHotels />
